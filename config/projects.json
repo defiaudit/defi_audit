@@ -1,0 +1,22 @@
+{
+  "projects": [
+    {
+      "name" : "Olympus DAO",
+      "ticker" : "OHM",
+      "website" : "https://olympusdao.finance",
+      "audit": true,
+      "ticker_url": "https://www.coingecko.com/en/coins/olympus",
+      "contract_url": "https://etherscan.io/token/0x383518188c0c6d7730d91b2c03a03c837814a899",
+      "icon_url": "https://assets.coingecko.com/coins/images/14483/small/token_OHM_%281%29.png?1628311611"
+    },
+    {
+      "name" : "Aave",
+      "ticker" : "AAVE",
+      "website" : "https://aave.com/",
+      "audit": true,
+      "ticker_url": "https://www.coingecko.com/en/coins/aave",
+      "contract_url": "https://etherscan.io/token/0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9",
+      "icon_url": "https://assets.coingecko.com/coins/images/12645/small/AAVE.png?1601374110"
+    }
+  ]
+}
