@@ -23,6 +23,8 @@
     </span>
   </td>
   <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-    ✅
+    <% project.audits.each do |audit| %>
+      <a class="text-indigo-600 hover:text-indigo-900 block" href="<%= audit.url %>" target="_blank"><%= audit.auditor.name %></a>
+    <% end %>
   </td>
 </tr>

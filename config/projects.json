@@ -7,7 +7,17 @@
       "audit": true,
       "ticker_url": "https://www.coingecko.com/en/coins/olympus",
       "contract_url": "https://etherscan.io/token/0x383518188c0c6d7730d91b2c03a03c837814a899",
-      "icon_url": "https://assets.coingecko.com/coins/images/14483/small/token_OHM_%281%29.png?1628311611"
+      "icon_url": "https://assets.coingecko.com/coins/images/14483/small/token_OHM_%281%29.png?1628311611",
+      "audit_data": [
+        { 
+          "auditor_name": "omniscia",
+          "url": "https://omniscia.io/olympusdao-algorithmic-currency-protocol/"
+        },
+        { 
+          "auditor_name": "peckshield",
+          "url": "https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-OlympusDAO-v1.0.pdf"
+        }
+      ]
     },
     {
       "name" : "Aave",
@@ -16,7 +26,8 @@
       "audit": true,
       "ticker_url": "https://www.coingecko.com/en/coins/aave",
       "contract_url": "https://etherscan.io/token/0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9",
-      "icon_url": "https://assets.coingecko.com/coins/images/12645/small/AAVE.png?1601374110"
+      "icon_url": "https://assets.coingecko.com/coins/images/12645/small/AAVE.png?1601374110",
+      "audit_data": [ ]
     }
   ]
 }

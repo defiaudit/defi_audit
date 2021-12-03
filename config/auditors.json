@@ -1,0 +1,16 @@
+{
+  "auditors": [
+    {
+      "name" : "Peck Shield",
+      "slug" : "peckshield",
+      "website": "https://peckshield.com/",
+      "icon_url": "https://pbs.twimg.com/profile_images/987282435812421632/pYNsUGGp_400x400.jpg"
+    },
+    {
+      "name" : "Omniscia",
+      "slug" : "omniscia",
+      "website": "https://omniscia.io/",
+      "icon_url": "https://omniscia.io/img/logo.png"
+    }
+  ]
+}
