@@ -1,0 +1,48 @@
+#!/bin/bash
+if [ -x "$(command -v rvm)" ]; then
+  rvm implode
+fi
+
+if ! which brew > /dev/null; then
+  echo "Installing Hombrew..."
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
+
+echo "Installing Ruby..."
+
+brew update
+brew install rbenv
+brew install ruby-build
+
+rbenv rehash
+rbenv install 3.0.3
+rbenv local 3.0.3
+echo 'export PATH="$HOME/.rbenv/shims:$PATH"' >> ~/.bash_profile
+source ~/.bash_profile
+rbenv rehash
+
+brew install qt@5.5
+echo 'export PATH="/usr/local/opt/qt@5.5/bin:$PATH"' >> ~/.bash_profile
+source ~/.bash_profile
+
+brew install postgresql
+brew services start postgresql
+
+gem install bundler
+rbenv rehash
+
+brew install nvm
+brew install node
+brew install yarn
+
+mkdir ~/.nvm
+echo 'export NVM_DIR=~/.nvm' >> ~/.bash_profile
+echo 'source $(brew --prefix nvm)/nvm.sh' >> ~/.bash_profile
+source ~/.bash_profile
+nvm install 16.13.1
+nvm use
+
+source ~/.bash_profile
+
+bundle install
+yarn install
